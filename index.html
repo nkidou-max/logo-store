@@ -1,0 +1,128 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Logos — Personnalisés, Twitch, T-shirt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <h1>Mes Logos</h1>
+      <nav class="badges">
+        <a href="#personnalises" class="pill">Personnalisés</a>
+        <a href="#twitch" class="pill">Twitch</a>
+        <a href="#tshirt" class="pill">T-shirt</a>
+        <a href="#contact" class="pill">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero wrap">
+    <div>
+      <h2>Logos personnalisés, Twitch, T-shirts</h2>
+      <p> Découvrez mon univers graphique : un lieu où chaque logo, chaque design, est pensé pour refléter votre identité.</p>
+      <div class="badges">
+        <span class="pill">Prenom</span>
+        <span class="pill">twitch</span>
+        <span class="pill">t-shirt</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- SECTION PERSONNALISÉS -->
+    <section id="personnalises" class="section">
+      <h2>Logos personnalisés (prénoms)</h2>
+     
+
+      <div class="logo-slider-container">
+  <button class="arrow left" onclick="scrollLogos(-300)">◀</button>
+
+  <div class="logo-slider" id="logoSlider">
+    <figure class="card"><img class="thumb" src="image/layla2.png"></figure>
+    <figure class="card"><img class="thumb" src="image/Assia.png"></figure>
+    <figure class="card"><img class="thumb" src="image/louis.png"></figure>
+    <figure class="card"><img class="thumb" src="image/Arthur.png"></figure>
+  </div>
+
+  <button class="arrow right" onclick="scrollLogos(300)">▶</button>
+</div>
+
+    </section>
+  
+
+    <!-- SECTION TWITCH -->
+    <section id="twitch" class="section">
+      <h2>Logos Twitch</h2>
+ 
+      
+     <div class="logo-slider-container">
+  <button class="arrow left" onclick="scrollLogos(-300)">◀</button>
+
+  <div class="logo-slider" id="logoSlider">
+    <figure class="card"><img class="thumb" src="image/twitch 1.png"></figure>
+    <figure class="card"><img class="thumb" src="image/twitch 3.png"></figure>
+    <figure class="card"><img class="thumb" src="image/easy game.png"></figure>
+    <figure class="card"><img class="thumb" src="image/twitch 4.png"></figure>
+  </div>
+
+  <button class="arrow right" onclick="scrollLogos(300)">▶</button>
+</div>
+    </section>
+
+    <!-- SECTION T-SHIRT -->
+    <section id="tshirt" class="section">
+      <h2>Logos T-shirt</h2>
+      
+     
+      
+      <div class="logo-slider-container">
+  <button class="arrow left" onclick="scrollLogos(-300)">◀</button>
+
+  <div class="logo-slider" id="logoSlider">
+    <figure class="card"><img class="thumb" src="image/Hope.png"></figure>
+    <figure class="card"><img class="thumb" src="image/Hope (1).png"></figure>
+    <figure class="card"><img class="thumb" src="image/tache tshirt.png"></figure>
+    <figure class="card"><img class="thumb" src="image/t3.png"></figure>
+  </div>
+
+  <button class="arrow right" onclick="scrollLogos(300)">▶</button>
+</div>
+
+
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <div class="contact">
+
+        <a class="btn" href="mailto:b.nadja@outlook.fr" title="Email">Email</a>
+        <a class="btn" href="https://www.instagram.com/lobo.ssgame" title="Instagram">Instagram</a>
+      </div>
+      <p class="muted">© <span id="year"></span> — Portfolio de logos</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+
+<script>
+function scrollLogos(amount) {
+  document.getElementById("logoSlider").scrollBy({
+    left: amount,
+    behavior: "smooth"
+  });
+}
+</script>
+
+</body>
+
+
+</html>
